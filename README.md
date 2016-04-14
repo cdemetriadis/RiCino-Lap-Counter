@@ -2,6 +2,8 @@
 
 ---
 
+_*NOTE:* There are changes coming to the RiCino Lap Counter which are not yet reflected in the source. These changes will affect the way the transponder communicates with the Reciever. These updates will be backward compatible, and will not be required if you do not wish to implement them._
+
 The RiCino Lap Counter is an [Arduino](http://arduino.cc) based, open source infrared RC Lap Counting System, compatible with the industry standard [Zround](http://www.zround.com) software. It is ideal for small scale indoor racing (Mini-Z), but could be used for any type of scale sport.
 
 RiCino Lap Counter was originally created by [Lisergio](http://lisergio.wordpress.com/). The name RiCino is a portmanteau of _RC_ + _Arduino_ and it was coined by Lisergio. The extra "i" between the R and C was added for phonetic reasons.
@@ -42,3 +44,4 @@ The RiCino Lap Counter is designed with scalability in mind. You can add as many
 The transponders are based on a single ATtiny85 chip design and are programmed to emit a single HEX code.
 
 ![Transponder Schematic](Transponder/Transponder.png)
+
