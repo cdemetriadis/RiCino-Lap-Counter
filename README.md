@@ -25,12 +25,12 @@ The RiCino Lap Counter system is comprised of two main components, the Receiver 
 The receiver can be built as a modular and expandable system, which can scale depending on the track size. The two main parts are the Decoder and the Sensors.
 
 ##### Decoder #####
-The main decoder is an Arduino ([ATmega328P](https://www.arduino.cc/en/Main/Products)) based module, running the custom RiCino Lap Counter software. The sensors are Infrared.
+The main decoder is an Arduino ([ATmega328P](https://www.arduino.cc/en/Main/Products)) based module, running the custom RiCino Lap Counter software. 
 
 ![Decoder Schematic](Receiver/Decoder.png)
 
 ##### Sensors #####
-The RiCino Lap Counter is designed with scalability in mind. You can add as many Sensors as your track requires. Usually, you'll need a senser every 70cm for a 50cm high bridge. The Sensor design is 
+The RiCino Lap Counter is designed with scalability in mind. You can add as many Infrared Sensors as your track requires. Usually, you'll need a sensor every 70cm for a 50cm high bridge.
 
 ![Sensor Schematic](Receiver/Sensor.png)
 
