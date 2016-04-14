@@ -205,15 +205,18 @@ void initiate_timer() {
 
 void lap_counter() {
 
-    tx = results.value;
-    if (tx != 0) {
-        Serial.print("%L");
-        Serial.print(tx, HEX);
-        Serial.print(",");
-        Serial.print(time, HEX);
+    check_transponder();
+    if (tx!=0) {
+        if (tx<16) {
+            Serial.print("%L0");
+        } else {
+            Serial.print("%L");
+        }
+        Serial.print(tx ,HEX);
+        Serial.print(time,HEX);
         Serial.print("&");
         Serial.println();
-        tx = 0;
+        tx=0;
     }
 }
 
@@ -254,5 +257,71 @@ void led_indicators() {
             digitalWrite(greenLed,HIGH);
             break;
     }
+
+}
+
+// **********************************************************************************
+
+void check_transponder() {
+
+    switch (results.value) {
+
+        case 0x00FFFF01:
+            tx=23;
+            break;
+        case 0x00FFFF02:
+            tx=24;
+            break;
+        case 0x00FFFF03:
+            tx=25;
+            break;
+        case 0x00FFFF04:
+            tx=26;
+            break;
+        case 0x00FFFF05:
+            tx=27;
+            break;
+        case 0x00FFFF06:
+            tx=28;
+            break;
+        case 0x00FFFF07:
+            tx=29;
+            break;
+        case 0x00FFFF08:
+            tx=30;
+            break;
+        case 0x00FFFF09:
+            tx=31;
+            break;
+        case 0x00FFFF0A:
+            tx=32;
+            break;
+        case 0x00FFFF0B:
+            tx=33;
+            break;
+        case 0x00FFFF0C:
+            tx=34;
+            break;
+        case 0x00FFFF0D:
+            tx=35;
+            break;
+        case 0x00FFFF0E:
+            tx=36;
+            break;
+        case 0x00FFFF0F:
+            tx=37;
+            break;
+        case 0x00FFFF10:
+            tx=38;
+            break;
+        case 0x00FFFF11:
+            tx=39;
+            break;
+        case 0x00FFFF12:
+            tx=40;
+            break;
+    }
+
+    irrecv.resume();
 
 }
