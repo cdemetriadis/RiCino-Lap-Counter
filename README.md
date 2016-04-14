@@ -16,7 +16,12 @@ RiCino Lap Counter was originally created by [Lisergio](http://lisergio.wordpres
 * DIY instructions
 * Dirt cheap to buy parts and build on your own
 
+
+## The Lap Counter System ##
+
 The RiCino Lap Counter system is comprised of two main components, the Receiver and the Transponder. Each has it's own hardware and software.
+
+![RiCino Lap Counter](images/ricino-lap-counter.jpg)
 
 
 ### Receiver ###
