@@ -24,29 +24,19 @@ The RiCino Lap Counter system is comprised of two main components, the Receiver 
 ### Receiver ###
 The receiver can be built as a modular and expandable system, which can scale depending on the track size. The two main parts are the Decoder and the Sensors.
 
-**Pic of Receiver**
-
 ##### Decoder #####
 The main decoder is an Arduino ([ATmega328P](https://www.arduino.cc/en/Main/Products)) based module, running the custom RiCino Lap Counter software. The sensors are Infrared.
 
-![Decoder Schematic](images/Decoder.png)
+![Decoder Schematic](Receiver/Decoder.png)
 
 ##### Sensors #####
 The RiCino Lap Counter is designed with scalability in mind. You can add as many Sensors as your track requires. Usually, you'll need a senser every 70cm for a 50cm high bridge. The Sensor design is 
 
-![Sensor Schematic](images/Sensor.png)
+![Sensor Schematic](Receiver/Sensor.png)
 
 
 ### Transponder ###
 The transponders are based on a single ATtiny85 chip design and are programmed to emit a single HEX code.
 
-**Pic of Transponder**
-
-![Transponder Schematic](images/Transponder.png)
-
-
-##### Transponder HEX Code Generator #####
-When you programme your own transponders, it goes without saying that you should create each transponder to emit a unique code. Doing this on a local scale is easy. But we've built a tool to generate, catalogue and register every unique code used for RiCino Lap Counter. This way, no two transponders will ever be the same, no matter where you are in the world.
-
-[Get your transponder HEX code]()
+![Transponder Schematic](Transponder/Transponder.png)
 
