@@ -16,8 +16,6 @@ RiCino Lap Counter was originally created by [Lisergio](http://lisergio.wordpres
 * DIY instructions
 * Dirt cheap to buy parts and build on your own
 
----
-
 The RiCino Lap Counter system is comprised of two main components, the Receiver and the Transponder. Each has it's own hardware and software.
 
 
@@ -39,4 +37,3 @@ The RiCino Lap Counter is designed with scalability in mind. You can add as many
 The transponders are based on a single ATtiny85 chip design and are programmed to emit a single HEX code.
 
 ![Transponder Schematic](Transponder/Transponder.png)
-
