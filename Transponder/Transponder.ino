@@ -18,7 +18,7 @@
 
 #include "IRTinyTX.h" // Short version on IRemote library
 
-//IR code list
+// IR code list
 #define tx23 0x00FFFF01
 #define tx24 0x00FFFF02
 #define tx25 0x00FFFF03
