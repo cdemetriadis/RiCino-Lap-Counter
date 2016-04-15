@@ -89,18 +89,6 @@ void connect_Zround() {
                 }
             }
         }
-        
-        // Message: Disconnect from Zround "%D&"
-        if (message[0] == '%') {
-            if (message[1] == 'D') {
-                if (message[2] == '&') {
-
-                    led_status = 1;
-
-                    message[0] = ('0');
-                }
-            }
-        }
 
         delay(50);
 
