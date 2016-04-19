@@ -12,7 +12,7 @@ RiCino Lap Counter was originally created by [Lisergio](http://lisergio.wordpres
 ## Features ##
 
 * Arduino based Receiver with Infrared Sensors
-* Unlimited number of transponders
+* Unlimited number of transponders (Coming Soon)
 * Works with the industry standard [Zround](http://www.zround.com) software
 * Scalable to any track width
 * DIY instructions
