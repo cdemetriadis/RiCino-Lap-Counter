@@ -4,6 +4,8 @@
 
 _*NOTE:* There are changes coming to the RiCino Lap Counter which are not yet reflected in the source. These changes will affect the way the transponder communicates with the Reciever. These updates will be backward compatible, and will not be required if you do not wish to implement them._
 
+_Until further notice, this project is a Work in Progress, and should be handled with care_
+
 The RiCino Lap Counter is an [Arduino](http://arduino.cc) based, open source infrared RC Lap Counting System, compatible with the industry standard [Zround](http://www.zround.com) software. It is ideal for small scale indoor racing (Mini-Z), but could be used for any type of scale sport.
 
 RiCino Lap Counter was originally created by [Lisergio](http://lisergio.wordpress.com/). The name RiCino is a portmanteau of _RC_ + _Arduino_ and it was coined by Lisergio. The extra "i" between the R and C was added for phonetic reasons.
@@ -45,6 +47,8 @@ The transponders are based on a single ATtiny85 chip design and are programmed t
 
 ![Transponder Schematic](Transponder/Transponder.png)
 
+## Requirements ##
+The RiCino Lap Counter is compatible with the Latest ZRound Suite (v1.15 and up). Download it at the official [Zround Website](http://www.zround.com/e107_plugins/download/download.php?action=list&id=5).
 
 ##### Transponder HEX Code Generator #####
 When you programme your own transponders, it goes without saying that you should create each transponder to emit a unique code. Doing this on a local scale is easy. But we've built a tool to generate, catalogue and register every unique code used for RiCino Lap Counter. This way, no two transponders will ever be the same, no matter where you are in the world.
