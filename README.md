@@ -14,7 +14,7 @@ RiCino Lap Counter was originally created by [Lisergio](http://lisergio.wordpres
 ## Features ##
 
 * Arduino based Receiver with Infrared Sensors
-* Almost infinite number of transponders (over 60.000 ID's)
+* Large number of transponders (over 60.000 ID's)
 * Works with the industry standard [Zround](http://www.zround.com) software
 * Scalable to any track width
 * DIY instructions
@@ -48,7 +48,7 @@ The transponders are based on a single ATtiny85 chip design and are programmed t
 ![Transponder Schematic](Transponder/Transponder.png)
 
 ## Requirements ##
-The RiCino Lap Counter is compatible with the Latest ZRound Suite (v1.15 and up). Download it at the official [Zround Website](http://www.zround.com/e107_plugins/download/download.php?action=list&id=5).
+The RiCino Lap Counter v2 is compatible with the Latest ZRound Suite (v1.15 and up). Download it at the official [Zround Website](http://www.zround.com/e107_plugins/download/download.php?action=list&id=5).
 
 ### Transponder HEX Code Generator ###
 When you programme your own transponders, it goes without saying that you should create each transponder to emit a unique code. Doing this on a local scale is easy. But we're building a tool to generate, catalogue and register every unique code used for the RiCino Lap Counter. This way, no two transponders will ever be the same, no matter where you are in the world.
