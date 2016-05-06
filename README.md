@@ -50,8 +50,10 @@ The transponders are based on a single ATtiny85 chip design and are programmed t
 ## Requirements ##
 The RiCino Lap Counter v2 is compatible with the Latest ZRound Suite (v1.15 and up). Download it at the official [Zround Website](http://www.zround.com/e107_plugins/download/download.php?action=list&id=5).
 
-### Transponder HEX Code Generator ###
-When you programme your own transponders, it goes without saying that you should create each transponder to emit a unique code. Doing this on a local scale is easy. But we're building a tool to generate, catalogue and register every unique code used for the RiCino Lap Counter. This way, no two transponders will ever be the same, no matter where you are in the world.
+### Transponder Code Generator (Coming Soon) ###
+Each Transponder is programmed to emit a unique 2 Byte Hexadecimal code (eg. 0x1B39). When you programme your own transponders, it goes without saying that you should create each transponder to emit a unique code. Doing this on a local scale is easy. But we're building a tool to generate, catalogue and register every unique code used for the RiCino Lap Counter. This way, no two transponders will ever be the same, no matter where you are in the world.
+
+All you need to do is visit our website, request the number of codes you will need, and we will make sure you get absolutely unique numbers. You will need to register with a valid email address in order to prevent abuse, but that's it.
 
 **Coming Soon**
 
