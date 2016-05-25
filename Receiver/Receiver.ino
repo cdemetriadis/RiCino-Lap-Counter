@@ -197,12 +197,14 @@ void lap_counter() {
   
     check_transponder();
     if (tx!=0) {
+        digitalWrite(redLed, HIGH);
         Serial.print("%L");
-        Serial.print(tx ,HEX);
+        Serial.print(tx, HEX);
         Serial.print(",");
-        Serial.print(time,HEX);
+        Serial.print(time, HEX);
         Serial.print("&");
         Serial.println();
+        digitalWrite(redLed, LOW);
         tx=0;
     }
 }
