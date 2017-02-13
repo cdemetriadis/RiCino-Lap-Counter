@@ -48,10 +48,17 @@ The transponders are based on a single ATtiny85 chip design and are programmed t
 ![Transponder Schematic](Transponder/Transponder.png)
 
 ## Requirements ##
-**USB Driver for Arduino**
+#### USB Driver for Arduino ####
 Your system might also require specific USB drivers for the Arduino. You can search for specific versions or [download](http://www.wch.cn/download/CH341SER_EXE.html) and try the ones that worked for us, for our Arduino Nano v3.
 
-**Zround Software**
+#### Programming the Transponder ####
+When programming the ATtiny85, there are two things you need to take note of:
+
+1. **8MHz Bootloader:** Make sure you first set it to the correct bootloader - "ATtiny85 @ 8MHz (internal oscillator; BOD disabled)".
+2. **Arduino 1.0.5:** For some reason, the only Arduino Application that worked with my ATtiny85 was Arduino 1.0.5. If you run into trouble, try using this version when programming your transponder. [Download previous Arduino releases](https://www.arduino.cc/en/Main/OldSoftwareReleases#1.0.x).
+
+
+#### Zround Software ####
 The RiCino Lap Counter v2 is compatible with the Latest ZRound Suite (v1.15 and up). Download it at the official [Zround Website](http://www.zround.com/e107_plugins/download/download.php?action=list&id=5).
 
 ## Transponder Code Generator (Coming Soon) ##
